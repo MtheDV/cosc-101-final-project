@@ -1,0 +1,14 @@
+.navigation {
+  ul {
+    height: 5rem;
+    padding: 0 7rem;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+
+    li:nth-last-child(2) {
+      margin-left: auto;
+    }
+  }
+}
