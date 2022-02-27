@@ -1,11 +1,20 @@
 import React from 'react';
-import Container from "../layouts/Base";
+import BaseLayout from "../layouts/Base";
+import Link from "next/link";
 
 const Home = () => {
     return (
-        <Container>
+        <BaseLayout>
             Content
-        </Container>
+            <br/>
+            <Link href={'/resources'}>
+                <a>Resources</a>
+            </Link>
+            <br/>
+            <Link href={'/about'}>
+                <a>About</a>
+            </Link>
+        </BaseLayout>
     )
 };
 
