@@ -1,0 +1,6 @@
+@import "styles/abstracts/mixins";
+@import "styles/abstracts/variables";
+
+.logoText {
+  @include chunky-underline($yellow, false, 40%);
+}
