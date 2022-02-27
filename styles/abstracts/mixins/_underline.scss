@@ -1,0 +1,31 @@
+// Adapted from https://codepen.io/jaicab/pen/MOeWjQ
+@mixin chunky-underline($color, $block: false, $size: 20%, $position: 0%) {
+  background-image: linear-gradient(
+                  transparent 0%,
+                  transparent (100% - $size - $position),
+                  $color  (100% - $size - $position),
+                  $color (100% - $position),
+                  transparent (100% - $position),
+                  transparent
+  );
+
+  @if $block {
+    &:after {
+      content: '';
+      display: block;
+    }
+  }
+}
+
+@mixin chunky-underline-animated($color, $block: false, $size: 20%, $position: 0%) {
+  @include chunky-underline($color, $block, $size, $position);
+  display: inline;
+
+  background-size: 0 100%;
+  background-repeat: no-repeat;
+  transition: .4s background-size;
+
+  &:hover {
+    background-size: 100% 100%;
+  }
+}
