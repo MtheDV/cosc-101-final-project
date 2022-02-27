@@ -1,11 +1,12 @@
 import React from 'react';
+import BaseLayout from "../layouts/Base";
 
 const Updates = () => {
     return (
-        <div>
+        <BaseLayout>
             Updates
-        </div>
-    );
+        </BaseLayout>
+    )
 };
 
 export default Updates;

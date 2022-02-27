@@ -1,11 +1,12 @@
 import React from 'react';
+import BaseLayout from "../layouts/Base";
 
 const About = () => {
     return (
-        <div>
+        <BaseLayout>
             About
-        </div>
-    );
+        </BaseLayout>
+    )
 };
 
 export default About;
