@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Feed = () => {
+const Updates = () => {
     return (
         <div>
-            Feed
+            Updates
         </div>
     );
 };
 
-export default Feed;
+export default Updates;
