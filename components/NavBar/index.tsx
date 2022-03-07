@@ -17,11 +17,6 @@ const NavBar = () => {
                         <a>Updates</a>
                     </Link>
                 </li>
-                <li>
-                    <Link href={'/petitions'}>
-                        <a>Petitions</a>
-                    </Link>
-                </li>
             </ul>
         </nav>
     );

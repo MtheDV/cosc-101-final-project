@@ -10,11 +10,7 @@
     align-items: center;
     gap: 5rem;
 
-    li:nth-last-child(2) {
-      margin-left: auto;
-    }
-
-    li:nth-last-of-type(-n+2) {
+    li:not(li:first-child) {
       @include chunky-underline-animated($yellow, false, 35%);
     }
   }
