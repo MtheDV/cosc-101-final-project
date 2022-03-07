@@ -1,11 +1,12 @@
 import React from 'react';
+import BaseLayout from "../layouts/Base";
 
 const Petitions = () => {
     return (
-        <div>
+        <BaseLayout>
             Petitions
-        </div>
-    );
+        </BaseLayout>
+    )
 };
 
 export default Petitions;

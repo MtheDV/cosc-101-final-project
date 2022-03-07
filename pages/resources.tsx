@@ -1,11 +1,12 @@
 import React from 'react';
+import BaseLayout from "../layouts/Base";
 
 const Resources = () => {
     return (
-        <div>
+        <BaseLayout>
             Resources
-        </div>
-    );
+        </BaseLayout>
+    )
 };
 
 export default Resources;
